@@ -1,19 +1,13 @@
 {
-  "name": "axon",
-  "description": "High-level messaging & socket patterns implemented in pure js",
+  "name": "axonx",
+  "description": "fork of axon with some modifications",
   "version": "0.6.1",
   "author": "TJ Holowaychuk <tj@vision-media.ca>",
+  "contributors": [ { "name": "Mark W. B. Ashcroft", "email": "mark@kurunt.com" } ],  
   "dependencies": {
     "debug": "*",
     "configurable": "0.0.1",
     "escape-regexp": "0.0.1"
-  },
-  "devDependencies": {
-    "better-assert": "*",
-    "should": "*",
-    "mocha": "*",
-    "commander": "*",
-    "humanize-number": "0.0.1"
   },
   "keywords": [
     "zmq",

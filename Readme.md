@@ -1,7 +1,7 @@
 # markcode:
 
-  I've made some changes to axon, to make it work with kurunt for guaranteeing message processing.  
-  These changes are currently specific to kurunt's requirements but may become pull requests within axon in the future.
+  I've made some changes to axon, to make it work with kurunt for guaranteeing message processing, etc.  
+  These changes currently only work with kurunt, however may become pull requests within axon in the future.
 
 # Axon
 
@@ -41,6 +41,7 @@
   - pub / sub
   - req / rep
   - pub-emitter / sub-emitter
+  - pubsub / pubsub (coming soon)
 
 ## Push / Pull
 
