@@ -1,3 +1,8 @@
+# markcode:
+
+  I've made some changes to axon, to make it work with kurunt for guaranteeing message processing.  
+  These changes are currently specific to kurunt's requirements but may become pull requests within axon in the future.
+
 # Axon
 
   Axon is a message-oriented socket library for node.js heavily inspired by zeromq.
