@@ -1,6 +1,6 @@
 {
-  "name": "axonx",
-  "description": "fork of axon with some modifications",
+  "name": "kurunt-axon",
+  "description": "fork of axon with some modifications for the kurunt module",
   "version": "0.6.1",
   "author": "TJ Holowaychuk <tj@vision-media.ca>",
   "contributors": [ { "name": "Mark W. B. Ashcroft", "email": "mark@kurunt.com" } ],  
@@ -10,6 +10,7 @@
     "escape-regexp": "0.0.1"
   },
   "keywords": [
+    "kurunt",
     "zmq",
     "zeromq",
     "pubsub",

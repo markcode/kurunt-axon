@@ -17,7 +17,7 @@
 
   - message oriented
   - automated reconnection
-  - guaranteeing message processing (markcode)
+  - guaranteed message processing (markcode)
   - light-weight wire protocol
   - supports arbitrary binary message (msgpack, json, BLOBS, etc)
   - supports JSON messages out of the box
