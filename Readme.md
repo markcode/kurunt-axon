@@ -7,7 +7,7 @@
 
   Axon is a message-oriented socket library for node.js heavily inspired by zeromq.
 
-[![Build Status](https://travis-ci.org/visionmedia/axon.png)](https://travis-ci.org/visionmedia/axon)
+
 
 ## Installation
 
@@ -17,6 +17,7 @@
 
   - message oriented
   - automated reconnection
+  - guaranteeing message processing (markcode)
   - light-weight wire protocol
   - supports arbitrary binary message (msgpack, json, BLOBS, etc)
   - supports JSON messages out of the box
@@ -41,7 +42,7 @@
   - pub / sub
   - req / rep
   - pub-emitter / sub-emitter
-  - pubsub / pubsub (coming soon)
+  - pubsub / pubsub (coming soon, markcode)
 
 ## Push / Pull
 
@@ -242,6 +243,7 @@ Every socket has associated options that can be configured via `get/set`.
   - `retry timeout` - connection retry timeout in milliseconds [100]
   - `retry max timeout` - the cap for retry timeout length in milliseconds [5000]
   - `hwm` - the high water mark threshold for queues [Infinity]
+  - `commits_hwm` - [bytes] the high water mark threshold for commits (guarantee plugin) queue [Infinity] (markcode).
 
 ## Binding / Connecting
 
