@@ -1,7 +1,8 @@
 # markcode:
 
   I've made some changes to axon, to make it work with kurunt for guaranteeing message processing, etc.  
-  These changes currently only work with kurunt, however may become pull requests within axon in the future.
+  These changes currently only work with kurunt, however may become pull requests within axon in the future.  
+  NOTE: Guaranteed Message Processing feature is under development and its use should be considered experimental.
 
 # Axon
 
@@ -243,7 +244,9 @@ Every socket has associated options that can be configured via `get/set`.
   - `retry timeout` - connection retry timeout in milliseconds [100]
   - `retry max timeout` - the cap for retry timeout length in milliseconds [5000]
   - `hwm` - the high water mark threshold for queues [Infinity]
-  - `commits_hwm` - [bytes] the high water mark threshold for commits (guarantee plugin) queue [Infinity] (markcode).
+  - `guarantee_delivery` - [boolean] to use guaranteed delivery for messages [false] (markcode).
+  - `commits_hwm` - [bytes] the high water mark threshold for queing messages until commited by receiver (markcode).
+  - `commits_timeout_resend` - [boolean] if commited timesout (30 seconds) resend messages [false] (markcode).
 
 ## Binding / Connecting
 
